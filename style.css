@@ -1,0 +1,299 @@
+header{
+    height: 5rem;
+    background-color: rgb(153, 176, 183);
+}
+.titlebar{
+    height: 50%;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    gap: 0.2rem;
+}
+.VLCimg{
+    height: 60%;
+    margin-left: 0.5rem;
+}
+.manu-bar{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+#media{
+    margin-left: 0.6rem;
+}
+main{
+    height: calc(100vh - (5rem + 3.5rem));
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.video{
+    height: 100%;
+}
+.preview{
+    height: 70px;
+}
+.manu:hover{
+    /* border: 1px solid red; */
+    background-color: rgb(207, 209, 210);
+}
+.manu{
+    position: relative;
+    cursor: pointer;
+}
+#inputfile{
+    display: none;
+}
+/* playback */
+.manu:hover .manu-items-playback{
+    display: block;
+}
+.manu-items-playback{
+    background-color: rgb(153, 176, 183);
+    position: absolute;
+    cursor: pointer;
+    margin-left: -11px;
+    display: none;
+}
+#SpeedUp:hover{
+    background-color: rgb(207, 209, 210);
+}
+#SpeedUp{
+    margin: 8px;
+    margin-left: -32px;
+}
+#SpeedDown:hover{
+    background-color: rgb(207, 209, 210);
+}
+#SpeedDown{
+    margin: 8px;
+    margin-left: -32px;
+}
+/* audio */
+.manu:hover .manu-items-audio{
+    display: block;
+}
+.manu-items-audio{
+    background-color: rgb(153, 176, 183);
+    position: absolute;
+    cursor: pointer;
+    margin-left: -12px;
+    display: none;
+}
+#VolumeUp:hover{
+    background-color: rgb(207, 209, 210);
+}
+#VolumeUp{
+    margin: 8px;
+    margin-left: -32px;
+}
+#VolumeDown:hover{
+    background-color: rgb(207, 209, 210);
+}
+#VolumeDown{
+    margin: 8px;
+    margin-left: -32px;
+}
+#Muted:hover{
+    background-color: rgb(207, 209, 210);
+}
+#Muted{
+    margin: 8px;
+    margin-left: -32px;
+}
+/* video */
+.manu:hover .manu-items-video{
+    display: block;
+}
+.manu-items-video{
+    background-color: rgb(153, 176, 183);
+    position: absolute;
+    cursor: pointer;
+    margin-left: -9px;
+    display: none;
+}
+#VideoTrack:hover{
+    background-color: rgb(207, 209, 210);
+}
+#VideoTrack{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#SubtitleTrack:hover{
+    background-color: rgb(207, 209, 210);
+}
+#SubtitleTrack{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#AspectRatio:hover{
+    background-color: rgb(207, 209, 210);
+}
+#AspectRatio{
+    margin: 8px;
+    margin-left: -32px;
+}
+#Zoom:hover{
+    background-color: rgb(207, 209, 210);
+}
+#Zoom{
+    margin: 8px;
+    margin-left: -32px;
+}
+#TakeSnapShort:hover{
+    background-color: rgb(207, 209, 210);
+}
+#TakeSnapShort{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+/* tools */
+.manu:hover .manu-items-tools{
+    display: block;
+}
+.manu-items-tools{
+    background-color: rgb(153, 176, 183);
+    position: absolute;
+    cursor: pointer;
+    margin-left: -9px;
+    display: none;
+}
+#EffectandFilters:hover{
+    background-color: rgb(207, 209, 210);
+}
+#EffectandFilters{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#MediaInformation:hover{
+    background-color: rgb(207, 209, 210);
+}
+#MediaInformation{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#ProgramGuide:hover{
+    background-color: rgb(207, 209, 210);
+}
+#ProgramGuide{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#CustomizeInterfaces:hover{
+    background-color: rgb(207, 209, 210);
+}
+#CustomizeInterfaces{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#Preferences:hover{
+    background-color: rgb(207, 209, 210);
+}
+#Preferences{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+/* view */
+.manu:hover .manu-items-view{
+    display: block;
+}
+.manu-items-view{
+    background-color: rgb(153, 176, 183);
+    position: absolute;
+    cursor: pointer;
+    margin-left: -8px;
+    display: none;
+}
+#Playlist:hover{
+    background-color: rgb(207, 209, 210);
+}
+#Playlist{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#MinimalInterface:hover{
+    background-color: rgb(207, 209, 210);
+}
+#MinimalInterface{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#FullscreenInterface:hover{
+    background-color: rgb(207, 209, 210);
+}
+#FullscreenInterface{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#AdvancedControl:hover{
+    background-color: rgb(207, 209, 210);
+}
+#AdvancedControl{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#StatusBar:hover{
+    background-color: rgb(207, 209, 210);
+}
+#StatusBar{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+/* Help */
+.manu:hover .manu-items-help{
+    display: block;
+}
+.manu-items-help{
+    background-color: rgb(153, 176, 183);
+    position: absolute;
+    cursor: pointer;
+    margin-left: -8px;
+    display: none;
+}
+#Help:hover{
+    background-color: rgb(207, 209, 210);
+}
+#Help{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#ChecksforUpdates:hover{
+    background-color: rgb(207, 209, 210);
+}
+#ChecksforUpdates{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+#About:hover{
+    background-color: rgb(207, 209, 210);
+}
+#About{
+    margin: 8px;
+    margin-left: -32px;
+    white-space: nowrap;
+}
+/* .preview-img{
+    display: none;
+} */
+footer{
+    height: 3.5rem;
+    background-color: rgb(153, 176, 183);
+}

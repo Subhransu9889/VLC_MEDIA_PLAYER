@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header>
+        <div class="titlebar">
+            <img src="../VLC/VLCImg/VLC.png" alt="VLCImg" class="VLCimg">
+            <h1>VLC Media Player</h1>
+        </div>
+        <div class="manu-bar">
+            <!-- open -->
+            <div class="manu">
+                <div class="manu-btn" id="media">Media</div>
+                <input type="file" id="inputfile">
+            </div>
+            <!-- Playback -->
+            <div class="manu">
+                <div class="manu-btn" id="playbackbtn">Playback</div>
+                <ul class="manu-items-playback" id="playbackitems">
+                    <li id="SpeedUp">SpeedUp</li>
+                    <li id="SpeedDown">SpeedDown</li>
+                </ul>
+            </div>
+            <!-- Audio -->
+            <div class="manu">
+                <div class="manu-btn" id="audiobtn">Audio</div>
+                <ul class="manu-items-audio">
+                    <li id="VolumeUp">VolumeUp</li>
+                    <li id="VolumeDown">VolumeDown</li>
+                    <li id="Muted">Mute</li>
+                </ul>
+            </div>
+            <!-- Video -->
+            <div class="manu">
+                <div class="manu-btn">Video</div>
+                <ul class="manu-items-video">
+                    <li id="VideoTrack">Video Track</li>
+                    <li id="SubtitleTrack">Subtitle Track</li>
+                    <li id="AspectRatio">Aspect Ratio</li>
+                    <li id="Zoom">Zoom</li>
+                    <li id="TakeSnapShort">Take SnapShort</li>
+                </ul>
+            </div>
+            <!-- Tools -->
+            <div class="manu">
+                <div class="manu-btn">Tools</div>
+                <ul class="manu-items-tools">
+                    <li id="EffectandFilters">Effect and Filters</li>
+                    <li id="MediaInformation">Media Information</li>
+                    <li id="ProgramGuide">Program Guide</li>
+                    <li id="CustomizeInterfaces">Customize Interfaces</li>
+                    <li id="Preferences">Preferences</li>
+                </ul>
+            </div>
+            <!-- View -->
+            <div class="manu">
+                <div class="manu-btn">View</div>
+                <ul class="manu-items-view">
+                    <li id="Playlist">Playlist</li>
+                    <li id="MinimalInterface">Minimal Interface</li>
+                    <li id="FullscreenInterface">Fullscreen Interface</li>
+                    <li id="AdvancedControl">Advanced Control</li>
+                    <li id="StatusBar">Status Bar</li>
+                </ul>
+            </div>
+            <!-- Help -->
+            <div class="manu">
+                <div class="manu-btn">Help</div>
+                <ul class="manu-items-help">
+                    <li id="Help">Help</li>
+                    <li id="ChecksforUpdates">Checks for Updates</li>
+                    <li id="About">About</li>
+                </ul>
+            </div>
+    </header>
+    <main id="mainvideo">
+        <div class="preview-img" id="preview-img">
+            <img src="../VLC/VLCImg/VLC.png" alt="VLCimg" class="preview">
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
