@@ -9,6 +9,8 @@ const Muted = document.getElementById("Muted");
 const toast = document.querySelector(".toast");
 const about = document.getElementById("About");
 const  ChecksforUpdates = document.getElementById("ChecksforUpdates");
+const iconplay = document.querySelector(".icon-box-play");
+const playbutton = document.querySelector("i");
 const openBtnHandler = () => {
     inputfile.click();
 }
@@ -107,6 +109,17 @@ const aboutHandler = () => {
 const updateHandler = () => {
     alert("No More Update Avilable");
 }
+const iconplayTopause = () => {
+    // Toggle between 'fa-play' and 'fa-pause' classes
+    if(playbutton.classList.contains('fa-play')){
+        playbutton.classList.remove('fa-play');
+        playbutton.classList.add('fa-pause');
+    }
+    else{
+        playbutton.classList.remove('fa-pause');
+        playbutton.classList.add('fa-play');
+    }
+}
 openbtn.addEventListener("click", openBtnHandler);
 inputfile.addEventListener("change", inputhandler);
 SpeedUp.addEventListener("click", speedupHandler);
@@ -116,3 +129,4 @@ VolumeDown.addEventListener("click", volumedownHandler);
 Muted.addEventListener("click", muteHandler);
 about.addEventListener("click", aboutHandler);
 ChecksforUpdates.addEventListener("click", updateHandler);
+iconplay.addEventListener("click", iconplayTopause)

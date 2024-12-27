@@ -313,4 +313,71 @@ main{
 footer{
     height: 3.5rem;
     background-color: rgb(153, 176, 183);
+    display: flex;
+    flex-direction: column;
+}
+.upperfooter{
+    height: 50%;
+    display: flex;
+}
+.time-bar{
+    width: 100%;
+}
+.lowerfooter{
+    height: 50%;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.icon-box-play{
+    width: 22px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.icon-box-play i {
+    color: #333;
+    transition: color 0.3s ease;
+}
+.icon-box-play:hover i {
+    color: #007bff;
+}
+.icon-box{
+    width: 22px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.icon-box i {
+    color: #333;
+    transition: color 0.3s ease;
+}
+.icon-box:hover i {
+    color: #007bff;
+}
+.threecombines{
+    display: flex;
+    gap: 3px;
+    height: 98%;
+}
+.twocombines{
+    display: flex;
+    gap: 3px;
+    height: 98%;
+}
+#playbutton{
+    /* height: 20px; */
 }
