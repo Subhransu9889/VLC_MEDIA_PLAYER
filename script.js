@@ -13,6 +13,11 @@ const iconplay = document.getElementById("icon-box-play");
 const playbutton = document.querySelector("i");
 const playPauseButton = document.getElementById("icon-box-play");
 const FullscreenBtn = document.getElementById("fullscreen");
+const resetBtn = document.getElementById("reset");
+const forwardBtn = document.getElementById("forward");
+const backwardBtn = document.getElementById("backward");
+const repeatBtn = document.getElementById("repeat");
+const suffleBtn = document.getElementById("suffle");
 const openBtnHandler = () => {
     inputfile.click();
 }
@@ -139,6 +144,10 @@ const updateHandler = () => {
     alert("No More Update Avilable");
 }
 const iconplayTopause = () => {
+    const video = document.querySelector("video")
+    if(video === null){
+        return;
+    }
     // Toggle between 'fa-play' and 'fa-pause' classes
     if(playbutton.classList.contains('fa-play')){
         playbutton.classList.remove('fa-play');
@@ -178,6 +187,66 @@ const FullscreenBtnHanler = () => {
         alert("Fullscreen not supported in this browser.");
     }
 }
+const resresetBtnHandler = () => {
+    const video = document.querySelector("video");
+    if(video === null){
+        return;
+    }
+    // pause the video
+    video.pause();
+
+    // Reset the current playback time to the beginning
+    const currentTime = document.getElementById("current-time");
+    video.currentTime = 0;
+
+    // Optionally, reset the playback rate if it was changed
+    video.playbackRate = 1;
+
+    // Optionally, reset volume if it was changed
+    video.volume = 0.4;
+
+    // Remove any custom styles (like zoom or transforms)
+    video.style.transform = "scale(1)";
+
+    // change the icon
+    playbutton.classList.remove('fa-pause');
+    playbutton.classList.add('fa-play');
+
+}
+const forwardBtnHanler = () => {
+    const video = document.querySelector("video");
+    if(video === null){
+        return;
+    }
+    video.currentTime = Math.min(video.currentTime + 10, video.duration);
+}
+const backwardBtnHanler = () => {
+    const video = document.querySelector("video");
+    if(video === null){
+        return;
+    }
+    video.currentTime = Math.max(video.currentTime - 10, 0);
+}
+let colorSetRepeat = false;
+const repeatBtnHandler = () => {
+    const video = document.querySelector("video");
+    if(video === null){
+        return;
+    }
+     // Toggle the loop property and button color
+    video.loop = !video.loop; // Toggle the looping property
+    colorSetRepeat = !colorSetRepeat; // Update the toggle state
+ 
+    if (colorSetRepeat) {
+         repeatBtn.style.color = "#007bff"; // Blue color when repeat is enabled
+    } else {
+         repeatBtn.style.color = ""; // Reset to default color
+    }
+}
+const suffleBtnHandler = () => {
+    alert("Shuffle functionality is not implemented as it requires multiple videos to be available and ordered.");
+
+}
 openbtn.addEventListener("click", openBtnHandler);
 inputfile.addEventListener("change", inputhandler);
 SpeedUp.addEventListener("click", speedupHandler);
@@ -190,3 +259,8 @@ ChecksforUpdates.addEventListener("click", updateHandler);
 iconplay.addEventListener("click", iconplayTopause);
 playPauseButton.addEventListener("click", playPauseButtonHandler);
 FullscreenBtn.addEventListener("click", FullscreenBtnHanler);
+resetBtn.addEventListener("click", resresetBtnHandler);
+forwardBtn.addEventListener("click", forwardBtnHanler);
+backwardBtn.addEventListener("click", backwardBtnHanler);
+repeatBtn.addEventListener("click", repeatBtnHandler);
+suffleBtn.addEventListener("click", suffleBtnHandler);
