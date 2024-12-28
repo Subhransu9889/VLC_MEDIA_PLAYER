@@ -373,3 +373,88 @@ footer{
 #playbutton{
     /* height: 20px; */
 }
+
+/* mobile screen adjustment */
+@media screen and (max-width: 600px) {
+    header {
+        height: 4rem;
+        background-color: rgb(153, 176, 183);
+    }
+    .titlebar {
+        height: 40%;
+        display: flex;
+        font-size: 10px;
+        align-items: center;
+        gap: 0.1rem;
+    }
+    .VLCimg {
+        height: 50%;
+        margin-left: 0.3rem;
+    }
+    .manu-bar {
+        height: 40%;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    #media {
+        margin-left: 0.4rem;
+    }
+    main {
+        height: calc(100vh - (4rem + 3rem));
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .video {
+        height: 100%;
+        width: 100%; /* Ensure full width for smaller screens */
+    }
+    footer {
+        height: 3rem;
+        background-color: rgb(153, 176, 183);
+        display: flex;
+        flex-direction: column;
+    }
+    .upperfooter {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        gap: 3px;
+    }
+    .lowerfooter {
+        height: 50%;
+        display: flex;
+        margin-left: 5px;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 1px;
+        cursor: pointer;
+    }
+    .icon-box {
+        width: 18px;
+        height: 70%;
+        border-radius: 5px;
+    }
+    .icon-box i {
+        font-size: 12px;
+    }
+    .threecombines, .twocombines {
+        gap: 2px;
+        height: 95%;
+    }
+    .manu-items-playback, 
+    .manu-items-audio, 
+    .manu-items-video, 
+    .manu-items-tools, 
+    .manu-items-view, 
+    .manu-items-help {
+        margin-left: -8px; /* Adjust for better alignment on small screens */
+    }
+}
