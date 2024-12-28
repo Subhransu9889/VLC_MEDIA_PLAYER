@@ -44,6 +44,7 @@ main{
 .manu{
     position: relative;
     cursor: pointer;
+    transition-duration: 0.3s;
 }
 #inputfile{
     display: none;
