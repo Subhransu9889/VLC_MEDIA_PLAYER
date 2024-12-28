@@ -19,6 +19,10 @@ const backwardBtn = document.getElementById("backward");
 const repeatBtn = document.getElementById("repeat");
 const suffleBtn = document.getElementById("suffle");
 const openBtnHandler = () => {
+    const video = document.querySelector("video");
+    if(video){
+        return;
+    }
     inputfile.click();
 }
 const inputhandler = (obj) => {
